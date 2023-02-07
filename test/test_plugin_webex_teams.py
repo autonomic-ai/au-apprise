@@ -50,12 +50,12 @@ apprise_url_tests = (
         'privacy_url': 'wxteams://a...a/',
     }),
     # Support Native URLs
-    ('https://api.ciscospark.com/v1/webhooks/incoming/{}'.format('a' * 80), {
+    ('https://webexapis.com/v1/webhooks/incoming/{}'.format('a' * 80), {
         # token provided - we're good
         'instance': NotifyWebexTeams,
     }),
     # Support Native URLs with arguments
-    ('https://api.ciscospark.com/v1/webhooks/incoming/{}?format=text'.format(
+    ('https://webexapis.com/v1/webhooks/incoming/{}?format=text'.format(
         'a' * 80), {
         # token provided - we're good
         'instance': NotifyWebexTeams,
